@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { setRegion, reset } from '../../redux/countries/countriesSlice';
 
 const Filter = () => {
@@ -33,8 +31,6 @@ const Filter = () => {
           value={filter}
           className="filter-input"
         />
-
-        <FontAwesomeIcon icon={faAngleDown} />
         Click
       </button>
       {displayDropDown ? (
